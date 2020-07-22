@@ -1,0 +1,90 @@
+<!--Standard line length________________________________________________________*/
+/*
+Author: Jay MacKilcline
+Start Date: 07/22/2020
+Complete Date:07/22/2020
+Associated files/folders: README.MDf
+Decription:  This is an instructional for the setup of GitHub repository, the
+Daily workflow, and some other references pertaining to version controle.
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>GitHub Instructional</title>
+</head>
+
+<body>
+  <h1>GitHub Setup</h1>
+  <h2>GitHub Installation</h2>
+  <code>sudo apt-get instal git</code>
+  <h2>Workflow</h2>
+  <ol>
+    <li>
+      Make a repository on github.com
+    </li>
+    <li>
+      Clone that repository to my local machine<br>
+      <code>git clone https://github.com/b10dev/somerepo.git</code>
+    </li>
+    <li>
+      Make a gitignore file<br>
+      <code>touch .gitignore</code>
+    </li>
+    <li>
+      Set globals<br>
+      <code>git config --global user.name "b10"</code><br>
+      <code>git config --global user.email "b10incdevelopers@gmail.com"</code>
+    </li>
+    <li>
+      Start tracking the files <br>
+      <code>git status</code> <br>
+      <code>git add -A</code>
+    </li>
+  </ol>
+  <h2>Daily Order of Operations</h2>
+  <ol>
+    <li>
+      <code>git status</code>
+    </li>
+    <li>
+      <code>git commit -m "commit notes"</code>
+    </li>
+    <li>
+      <code>git status</code>
+    </li>
+    <li>
+      <code>git push origin master</code>
+    </li>
+  </ol>
+
+  <h2>Other References</h2>
+  <p>Help Menu</p>
+  <code>git config --help</code>
+  <p>initialize Repo in the command line. Navigate to the file in the terminal.</p>
+  <code>git init</code>
+  <p>Delete Repo on local machine</p>
+  <code>rm -rf .git</code>
+  <p>Remove files from Staging</p>
+  <code>git reset</code>
+  <p>View comments</p>
+  <code>git log</code>
+  <p>See changes</p>
+  <code> git diff</code>
+  <p>Branches</p>
+  <p>List all of the branches</p>
+  <code>git branch</code>
+  <p>Nake a branch called something, in this case main</p>
+  <code>git branch main</code>
+  <p>Put yourself in that particular branch, in this case main</p>
+  <code>git checkout main</code>
+  <p>Merge branches</p>
+  <p>Merge with main</p>
+  <code>git merge main</code>
+  <p>delete branch</p>
+  <code>git branch -d main</code>
+
+</body>
+
+</html>
